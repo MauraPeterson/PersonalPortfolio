@@ -8,6 +8,7 @@ app.get('/', (request, response) => {
     
     if(err) {
       response.status(500).send('sorry, out of order')
+      console.log(err);
     }
 
     response.send(html);
