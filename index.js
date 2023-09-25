@@ -1,9 +1,9 @@
 const express = require('express');
 const { readFile, readFileSync } = require('fs');
 
+var http = require('http');
 const path = require('path');
 const app = express();
-
 
 app.get('/', (request, response) => {
   readFile('./index.html', 'utf8', (err, html) => {
@@ -19,4 +19,4 @@ app.get('/', (request, response) => {
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.listen(process.env.PORT || 80, () => console.log(`Listening on port 80`))
+app.listen(process.env.PORT || 3000, () => console.log(`Listening on port 80`))
