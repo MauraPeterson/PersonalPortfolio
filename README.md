@@ -10,7 +10,7 @@
 
 
 ## Demo
-Here is a working live demo :  https://maurapetersonsoftware.com
+Here is a working live demo :  http://maurapetersonsoftware.com
 
 
 ## Site
