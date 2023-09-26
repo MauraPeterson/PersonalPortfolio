@@ -74,6 +74,7 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 ## Team
 
 Maura Peterson
+
 [![Maura Peterson](https://avatars.githubusercontent.com/u/138624759?s=400&u=0bc2b43dbee74f0a7e5684fa38057fee0c9fa299&v=4)](https://github.com/maurapeterson) 
 
 
