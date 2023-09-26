@@ -1,0 +1,11 @@
+:root{
+  --color1: #c8e8ef;
+  --color2: #000012;
+
+  --about-me-bg: #efe4b2;
+  --about-me-border-light: #eee3b1;
+  --about-me-border-dark: #ead46f;
+
+  --project-card-bg: rgb(165, 216, 229);
+  --project-card-hover: rgb(131, 188, 204);
+}
