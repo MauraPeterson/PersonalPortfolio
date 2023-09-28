@@ -48,16 +48,9 @@ summary{
   margin-left: 12%;
   margin-right: 12%;
   
-  border-width: 6px;
   padding: 30px;
   font-size: 30px;
   border-radius: 15px;
-  /*border: solid;
-  background: var(--about-me-bg);
-  border-bottom-color: var(--about-me-border-dark);
-  border-right-color: var(--about-me-border-dark);
-  border-top-color: var(--about-me-border-light);
-  border-left-color: var(--about-me-border-light);*/
 }
 
 .profile-picture{
@@ -68,7 +61,6 @@ summary{
 .about-details{
   margin-left: 10%;
   margin-right: 10%;
-
 }
 
 #gpa {
@@ -223,4 +215,25 @@ summary{
     opacity: 0;
     transform: scale(1);
   }
+}
+
+/* cherry rush */
+.small-header {
+  padding: 1px 20px 1px 20px ;
+  margin: 0;
+}
+
+#unity-container {
+  margin: 1%;
+}
+
+.cherry-rush-about{
+  background: var(--nav-bar);
+  width: 70%;
+  margin-left: 12%;
+  margin-right: 12%;
+  
+  padding: 30px;
+  font-size: 30px;
+  border-radius: 15px;
 }

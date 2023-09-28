@@ -23,5 +23,10 @@ app.get('/movie-land', function (req, res) {
   app.use(express.static(path.join(__dirname, 'public/movie-land/build')));
 });
 
+app.get('/cherry-rush', function (req, res) {
+  res.sendFile(path.join(__dirname, '/public/cherry-rush', 'cherryRush.html'));
+  app.use(express.static(path.join(__dirname, 'public')));
+});
+
 
 app.listen(process.env.PORT || 3000, () => console.log(`Listening on port 3000`))
