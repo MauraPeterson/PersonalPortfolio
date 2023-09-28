@@ -14,4 +14,9 @@ function addSplash(e) {
     location.href = '/cherry-rush/cherryRush.html'
   }, false);
 
+  document.getElementById('js-movie-land').addEventListener('click', function() {
+    location.href = '/movie-land'
+  }, false);
+
+
 

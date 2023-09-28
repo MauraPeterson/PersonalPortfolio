@@ -1,10 +1,17 @@
  @import url(colors.css); 
 
- body {
+body {
   background: var(--bg);
   color: var(--color1);
   text-align: center;
   font-family:'Times New Roman', Times, serif
+}
+
+nav {
+  width: 101.5%;
+  margin: -1%;
+  background: var(--nav-bar);
+  display: flex;
 }
 
 header {
@@ -23,15 +30,17 @@ h1 {
   grid-column: 1;
 }
 
+h2 {
+  font-size: 50px;
+}
+
 img{
   opacity: 65%;
 }
 
-nav {
-  width: 101.5%;
-  margin: -1%;
-  background: var(--nav-bar);
-  display: flex;
+/* summary */
+summary{
+  cursor: pointer;
 }
 
 .summary-container{
@@ -51,7 +60,6 @@ nav {
   border-left-color: var(--about-me-border-light);*/
 }
 
-
 .profile-picture{
   width: 178px;
   height: 206px;
@@ -61,56 +69,6 @@ nav {
   margin-left: 10%;
   margin-right: 10%;
 
-}
-
-#unity-container {
-  margin: 1%;
-}
-
-.project-card{
-  font-size: 200%;
-  background: var(--project-card-bg);
-  width: 30%;
-  margin: 1.7%;
-  border-radius: 15px;
-  border-top: solid;
- 
-  border-color: var(--project-card-hover);
-}
-
-.project-card:hover{
-  background-color: var(--project-card-hover);
-  width: 30%;
-  margin: 1.65%;
-  border-radius: 15px;
-  border-width: 2px;
-}
-
-.projects {
-  display: flex;
-}
-
-h2 {
-  font-size: 50px;
-}
-
-.project-card-header {
-  margin-bottom: -3%;
-  margin-top: 3%;
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
-  height: 10%;
-}
-
-.project-card-img {
-  width: 90%;
-  height: 80%;
-  border-radius: 9px;
-  margin-top: 5%;
-}
-
-.small-header {
-  padding: 1px 20px 1px 20px ;
 }
 
 #gpa {
@@ -150,6 +108,48 @@ h2 {
   align-self: start;
 }
 
+/* project-cards */
+.project-card{
+  font-size: 200%;
+  background: var(--project-card-bg);
+  width: 30%;
+  margin: 1.7%;
+  border-radius: 15px;
+  border-top: solid;
+ 
+  border-color: var(--project-card-hover);
+}
+
+.project-card:hover{
+  background-color: var(--project-card-hover);
+  width: 30%;
+  margin: 1.65%;
+  border-radius: 15px;
+  border-width: 2px;
+  cursor: pointer;
+}
+
+.projects {
+  display: flex;
+}
+
+
+.project-card-header {
+  margin-bottom: -3%;
+  margin-top: 3%;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  height: 10%;
+}
+
+.project-card-img {
+  width: 90%;
+  height: 80%;
+  border-radius: 9px;
+  margin-top: 5%;
+}
+
+/* circles */
 .circles {
   height: 90px;
   width: 90px;
@@ -213,16 +213,6 @@ h2 {
   }
 }
 
-@keyframes tGrowAndFade {
-  0% {
-    opacity: .25;
-    transform: scale(0);
-  }
-  100% {
-    opacity: 0;
-    transform: scale(1);
-  }
-}
 
 @keyframes growAndFade {
   0% {
@@ -234,4 +224,3 @@ h2 {
     transform: scale(1);
   }
 }
-
