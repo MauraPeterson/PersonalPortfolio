@@ -1,11 +1,16 @@
 :root{
-  --color1: #c8e8ef;
+  --color1: #bbbbcde7;
   --color2: #000012;
 
-  --about-me-bg: #efe4b2;
-  --about-me-border-light: #eee3b1;
-  --about-me-border-dark: #ead46f;
 
-  --project-card-bg: rgb(165, 216, 229);
-  --project-card-hover: rgb(131, 188, 204);
+  --bgcolor1: #330033;
+  --bgcolor2:#000012;
+  --bgcolor3:#003333;
+  --bg: linear-gradient(140deg, var(--bgcolor1) 0%, var(--bgcolor2) 45%, var(--bgcolor3) 100%);
+
+  --nav-bar: #ffffff0f;
+
+
+  --project-card-bg: #ffffff21;
+  --project-card-hover: #ffffff38;
 }
