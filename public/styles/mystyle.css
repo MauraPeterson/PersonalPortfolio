@@ -23,7 +23,7 @@ h1 {
 }
 
 img{
-  opacity: 60%;
+  opacity: 65%;
 }
 
 nav {
@@ -159,7 +159,7 @@ h2 {
   
   > div {
     animation: growAndFade 6s infinite ease-out;
-    background-color: rgba(30, 143, 255, 0.162);
+    background-color: rgba(30, 143, 255, 0.291);
     border-radius: 50%;
     height: 100%;
     opacity: 0;

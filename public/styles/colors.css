@@ -1,5 +1,5 @@
 :root{
-  --color1: #bbbbcde7;
+  --color1: #ffeeff;
   --color2: #000012;
 
 
@@ -8,9 +8,9 @@
   --bgcolor3:#003333;
   --bg: linear-gradient(140deg, var(--bgcolor1) 0%, var(--bgcolor2) 45%, var(--bgcolor3) 100%);
 
-  --nav-bar: #ffffff0f;
+  --nav-bar: #ffffff1b;
 
 
-  --project-card-bg: #ffffff21;
-  --project-card-hover: #ffffff38;
+  --project-card-bg: #ffffff2e;
+  --project-card-hover: #ffffff65;
 }
