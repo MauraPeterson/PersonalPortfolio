@@ -11,5 +11,13 @@ export NVM_DIR"$HOME/.nvm"
 #install node modules
 npm install
 
+#set up movie-land
+cd public
+cd movie-land
+npm install
+npm run build
+cd ..
+cd ..
+
 #start our node app in the background
 node index.js > ~/index.out.log 2> ~/index.err.log < /dev/null & 
