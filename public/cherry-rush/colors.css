@@ -1,0 +1,18 @@
+:root{
+  --color1: #fffbff;
+  --color2: #fff5ff90;
+  --color3: #00ffff90;
+  --color4: #ff00ff90;
+
+
+  --bgcolor1: #330033;
+  --bgcolor2:#000012;
+  --bgcolor3:#003333;
+  --bg: linear-gradient(140deg, var(--bgcolor1) 0%, var(--bgcolor2) 45%, var(--bgcolor3) 100%);
+
+  --nav-bar: #ffffff42;
+
+
+  --project-card-bg: #ffffff48;
+  --project-card-hover: #ffffff7e;
+}

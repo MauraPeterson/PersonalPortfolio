@@ -1,25 +1,61 @@
- @import url(colors.css); 
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
+@import url(colors.css); 
 
-body {
-  background: var(--bg);
-  color: var(--color1);
-  text-align: center;
-  font-family:'Times New Roman', Times, serif
+* {
+  margin: 0;
+  border: 0;
 }
 
+html, body {
+  background: var(--bg);
+  overflow-x: hidden;
+  color: var(--color1);
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  padding: 0;
+}
+
+
 nav {
-  width: 101.5%;
-  margin: -1%;
-  background: var(--nav-bar);
   display: flex;
+  align-items:center;
+  justify-content: start;
+  background-color: var(--project-card-bg);
+  height: 80px;
+}
+
+.nav-name{
+  font-size: 50px;
+  margin: 15px;
+  cursor: pointer;
+  margin-right: 2%;
+}
+
+.nav-button{
+  font-size: 30px;
+  height: 100%;
+  width: 10%;
+  cursor: pointer;
+  color: var(--color1);
+  background: none;
+  border-right: solid;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  border-width: 1px;
+}
+
+.home{
+  border-left: solid;
+  border-width: 1px;
 }
 
 header {
   font-weight: 600;
   padding: 20px;
   width: 100%;
-  margin-top: 200px;
-  margin-bottom: 100px;
+  margin-top: 280px;
+  margin-bottom: 280px;
   display: grid;
 }
 
@@ -147,7 +183,7 @@ summary{
   height: 90px;
   width: 90px;
   position: absolute;
-  z-index: -1;
+  z-index: 0;
   top: -200px;
   
   > div {
@@ -171,16 +207,14 @@ summary{
   }
 }
 
-
-
 .title-circles{
-  height: 1400px;
-  width: 1400px;
+  height: 640px;
+  width:  640px;
   position: absolute;
-  z-index: -1;
+  z-index: 0;
   justify-self: center;
   align-self: start;
-  margin-top: -590px;
+  margin-top: -260px;
 
   > div {
     animation: growAndFade 9s infinite ease-out;
@@ -190,7 +224,6 @@ summary{
     opacity: 0;
     position: absolute;
   }
-
   
   .title-circle1 {
     animation-delay: 0s;  
@@ -205,7 +238,6 @@ summary{
     background-color: var(color4);
   }
 }
-
 
 @keyframes growAndFade {
   0% {

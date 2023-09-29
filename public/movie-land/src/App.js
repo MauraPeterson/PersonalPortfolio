@@ -21,7 +21,6 @@ const API_URL = 'http://www.omdbapi.com?apikey=fcc487c6';
 const App = () =>{
   const [movies, setMovies] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
-  console.log("hi");
   const searchMovies = async (title) => {
     const response = await fetch(`${API_URL}&s=${title}`);
 
@@ -31,24 +30,38 @@ const App = () =>{
     console.log(data.Search);
   }
 
+  const goHome = async () => {
+    window.location = '/';
+  }
+
   useEffect(() => {
     searchMovies('Avengers');
   }, []);
 
   return (
     <div className="app">
+      <nav>
+        <div class="nav-name" 
+          onClick={() => goHome()}>Maura Peterson</div>
+        <button class="nav-button home" 
+        onClick={() => goHome()}>Home</button>
+        <button class="nav-button">About Me</button>
+        <button class="nav-button">Contact</button>
+      </nav>
+      <div className='movie-land'>
+
       <h1>MovieLand</h1>
       <div className='search'>
         <input
           placeholder='Search for movies'
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-        />
+          />
         <img 
           src={SearchIcon}
           alt='search'
           onClick={() => searchMovies(searchTerm)}
-        />
+          />
       </div>
 
       {movies?.length > 0
@@ -56,7 +69,7 @@ const App = () =>{
           <div className='container'>
             {movies.map((movie) => (
               <MovieCard movie={movie} />
-            ))}
+              ))}
             
           </div>
         ) :
@@ -67,6 +80,7 @@ const App = () =>{
         )}
 
       
+        </div>
     </div>
   );
 }
