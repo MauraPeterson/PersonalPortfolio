@@ -25,7 +25,7 @@ app.get('/movie-land', function (req, res) {
 
 app.get('/cherry-rush', function (req, res) {
   res.sendFile(path.join(__dirname, '/public/cherry-rush', 'cherryRush.html'));
-  app.use(express.static(path.join(__dirname, 'public')));
+  app.use(express.static(path.join(__dirname, '/public/cherry-rush')));
 });
 
 

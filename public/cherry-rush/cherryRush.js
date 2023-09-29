@@ -1,3 +1,13 @@
+document.getElementById('js-home').addEventListener('click',
+function() {
+  location.href = '/'
+}, false);
+
+document.getElementById('js-home-name').addEventListener('click',
+function() {
+  location.href = '/'
+}, false);
+
 var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
       var loadingBar = document.querySelector("#unity-loading-bar");
@@ -89,3 +99,4 @@ var container = document.querySelector("#unity-container");
             };
 
       document.body.appendChild(script);
+
