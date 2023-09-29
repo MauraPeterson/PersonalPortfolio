@@ -10,8 +10,7 @@
 
 
 ## Demo
-Here is a working live demo :  http://maurapetersonsoftware.com
-Https version coming soon
+Here is the website url:  http://maurapetersonsoftware.com
 
 
 ## Site
