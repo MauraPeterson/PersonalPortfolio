@@ -18,6 +18,11 @@ app.get('/', (request, response) => {
   })
 });
 
+app.get('/personal-portfolio', function (req, res) {
+  res.sendFile(path.join(__dirname, '/public/personal-portfolio', 'personal-portfolio.html'));
+  app.use(express.static(path.join(__dirname, '/public/personal-portfolio')));
+});
+
 app.get('/movie-land', function (req, res) {
   res.sendFile(path.join(__dirname, '/public/movie-land/build', 'index.html'));
   app.use(express.static(path.join(__dirname, 'public/movie-land/build')));
