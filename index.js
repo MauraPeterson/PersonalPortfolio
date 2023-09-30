@@ -1,7 +1,6 @@
 const express = require('express');
-const { readFile, readFileSync } = require('fs');
+const { readFile} = require('fs');
 
-var http = require('http');
 const path = require('path');
 const app = express();
 
@@ -26,6 +25,11 @@ app.get('/movie-land', function (req, res) {
 app.get('/cherry-rush', function (req, res) {
   res.sendFile(path.join(__dirname, '/public/cherry-rush', 'cherryRush.html'));
   app.use(express.static(path.join(__dirname, '/public/cherry-rush')));
+});
+
+app.get('/about-me', function (req, res) {
+  res.sendFile(path.join(__dirname, '/public/about-me', 'about-me.html'));
+  app.use(express.static(path.join(__dirname, '/public/about-me')));
 });
 
 

@@ -16,11 +16,16 @@
     document.getElementById('js-movie-land').addEventListener('click', function() {
       location.href = '/movie-land'
     }, false);
+    
+    document.getElementById('js-about-me').addEventListener('click', function() {
+      location.href = '/about-me'
+    }, false);
 
     document.getElementsByClassName('js-home').addEventListener('click',
     function() {
       location.href = '/'
     }, false);
+
 
 
 
