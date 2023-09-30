@@ -68,21 +68,6 @@ nav {
   border-width: 1px;
 }
 
-header {
-  font-weight: 600;
-  padding: 20px;
-  width: 100%;
-  margin-top: 280px;
-  margin-bottom: 280px;
-  display: grid;
-}
-
-h1 {
-  font-size: 80px;
-  font-weight: bold;
-  grid-row: 1;
-  grid-column: 1;
-}
 
 h2 {
   font-size: 50px;
