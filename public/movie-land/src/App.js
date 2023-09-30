@@ -34,6 +34,10 @@ const App = () =>{
     window.location = '/';
   }
 
+  const aboutMe = async () => {
+    window.location = '/about-me';
+  }
+
   useEffect(() => {
     searchMovies('Avengers');
   }, []);
@@ -45,7 +49,7 @@ const App = () =>{
           onClick={() => goHome()}>Maura Peterson</div>
         <button class="nav-button home" 
         onClick={() => goHome()}>Home</button>
-        <button class="nav-button">About Me</button>
+        <button class="nav-button" onClick={() => aboutMe()}>About Me</button>
         <button class="nav-button">Contact</button>
       </nav>
       <div className='movie-land'>
