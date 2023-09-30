@@ -26,10 +26,10 @@ nav {
   cursor: pointer;
   color: var(--color1);
   background: none;
-  border-right: solid;
   border-top: none;
   border-bottom: none;
   border-left: none;
+  border-right: solid;
   border-width: 1px;
 }
 

@@ -12,6 +12,10 @@ document.getElementById('js-about-me').addEventListener('click', function() {
   location.href = '/about-me'
 }, false);
 
+document.getElementById('js-contact').addEventListener('click', function() {
+  location.href = '/contact'
+}, false);
+
 var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
       var loadingBar = document.querySelector("#unity-loading-bar");

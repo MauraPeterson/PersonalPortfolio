@@ -37,5 +37,10 @@ app.get('/about-me', function (req, res) {
   app.use(express.static(path.join(__dirname, '/public/about-me')));
 });
 
+app.get('/contact', function (req, res) {
+  res.sendFile(path.join(__dirname, '/public/contact', 'contact.html'));
+  app.use(express.static(path.join(__dirname, '/public/contact')));
+});
+
 
 app.listen(process.env.PORT || 3000, () => console.log(`Listening on port 3000`))
