@@ -98,9 +98,17 @@ summary{
   height: 206px;
 }
 
+.seeking{
+  margin: 20px;
+}
+
 .about-details{
   margin-left: 10%;
   margin-right: 10%;
+  
+  margin-top: 30px;
+  margin-bottom: 10px;
+
 }
 
 #gpa {
@@ -125,19 +133,32 @@ summary{
 .education-dates {
   order: 2;
   text-align: right;
+  margin-bottom: 20px;
+}
+
+#education-date-SE{
+  margin-bottom: 9%;
+}
+
+.skills{
+  margin: 20px;
 }
 
 .list-container{
   display: flex;
-  gap: 26%;
+  justify-content: center;
+  align-content: center;
+  gap: 4%;
   margin-top: 20px;
   width: 100%;
 }
 
 .list{
-  width: 30%;
   text-align: left;
-  align-self: start;
+}
+
+li{
+  margin-top: 5px;
 }
 
 
