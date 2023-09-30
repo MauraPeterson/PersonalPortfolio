@@ -9,7 +9,11 @@
       }
     }
 
-    document.getElementById('js-cherry-rush').addEventListener('click', function() {
+    document.getElementById('js-personal-portfolio').addEventListener('click', function() {
+      location.href = '/personal-portfolio'
+    }, false);
+
+    document.getElementById('js-cherry-rush').addEventListener('click', function(){
       location.href = '/cherry-rush'
     }, false);
 
@@ -19,6 +23,10 @@
     
     document.getElementById('js-about-me').addEventListener('click', function() {
       location.href = '/about-me'
+    }, false);
+
+    document.getElementById('js-contact').addEventListener('click', function() {
+      location.href = '/contact'
     }, false);
 
     document.getElementsByClassName('js-home').addEventListener('click',
